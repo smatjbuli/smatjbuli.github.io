@@ -1,0 +1,51 @@
+body {
+  width: 100%;
+  background-image: url(pictures/logo/Picture3.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.nav {
+  background-color: #eeeeee;
+}
+
+.fs-5 {
+  color: black;
+}
+
+.fs-5:hover {
+  color: black;
+}
+
+.container {
+  border-color: black;
+}
+
+.logo-link {
+  width: 50px;
+  margin-top: 10px;
+}
+
+.logo-link:hover {
+  color: blue;
+}
+
+.container-logo {
+}
+
+.container-logo:hover {
+  background-color: #f7f7f7;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.text-link {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #eeeeee;
+}
