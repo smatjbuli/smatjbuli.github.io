@@ -175,7 +175,7 @@ body {
   display: flex;
   align-items: center;
   margin-top: 1rem;
-  background-color: var(--yellow);
+  background-color: #e4e4e4;
   box-shadow: 1px 1px 3px black;
   padding-left: 2rem;
   font-size: 1rem;
@@ -190,7 +190,7 @@ body {
 }
 
 .contact .contacts form .input-group a:hover {
-  color: var(--primary);
+  color: var(--yellow);
 }
 
 /* End Contact */
