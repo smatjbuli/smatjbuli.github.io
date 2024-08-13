@@ -16,6 +16,7 @@
 body {
   background-color: var(--primary);
   color: var(--bg);
+  min-height: 5000px;
 }
 
 /* Navbar */
@@ -87,6 +88,84 @@ body {
 }
 /* End Navbar */
 
+/* Image Slider */
+
+.carousel-caption {
+  width: 100%;
+  height: 800px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 17rem;
+}
+
+.carousel-caption h2 {
+  font-size: 60px;
+  padding-bottom: 0;
+  text-shadow: 2px 2px 2px black;
+}
+
+.carousel-caption p {
+  font-size: 25px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.carousel-caption h3::after {
+  content: "";
+  display: block;
+  border-bottom: 1rem solid var(--yellow);
+  transform: scale(0.4);
+}
+
+.carousel-inner .carousel-item {
+  background-color: #000;
+}
+
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.carousel-inner .carousel-item > img {
+  animation: zoom 15s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.1, 1.1);
+  }
+}
+/* End Image Slider */
+
+/* About */
+.about {
+  padding: 6rem 7% 8rem;
+}
+
+.about h2::after {
+  content: "";
+  display: block;
+  margin-top: 0.4rem;
+  border-bottom: 0.3rem solid var(--yellow);
+  transform: scaleX(0.06);
+}
+
+.about h2 {
+  top: 0;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+/* End About */
+
 /* Section Link */
 .link {
   padding: 8.5rem 7% 8rem;
@@ -149,8 +228,24 @@ body {
 /* Contact */
 
 .contact {
+  margin: 0;
   background-color: #eeeeee;
-  padding: 8rem 7% 6rem;
+  padding: 6rem 7% 6rem;
+}
+
+.contact h2 {
+  top: 0;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+
+.contact h2::after {
+  content: "";
+  display: block;
+  margin-top: 0.4rem;
+  border-bottom: 0.3rem solid var(--yellow);
+  transform: scaleX(0.06);
 }
 
 .contact .contacts {
@@ -174,7 +269,6 @@ body {
 .contact .contacts form .input-group {
   display: flex;
   align-items: center;
-  margin-top: 1rem;
   background-color: #e4e4e4;
   box-shadow: 1px 1px 3px black;
   padding-left: 2rem;
@@ -225,6 +319,13 @@ footer {
 @media (max-width: 1366px) {
   html {
     font-size: 80%;
+  }
+  .carousel-caption {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 21rem;
   }
 }
 
@@ -288,6 +389,28 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .carousel-caption {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 27rem;
+  }
+
+  .carousel-caption h2 {
+    font-size: 30px;
+    padding-bottom: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .carousel-caption p {
+    font-size: 15px;
+  }
+
+  .about {
+    padding: 8rem 7% 8rem;
+  }
 }
 
 /* Phone */
@@ -311,6 +434,16 @@ footer {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .carousel-caption {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 32rem;
+  }
+  .about {
+    padding: 10rem 7% 8rem;
   }
 }
 
