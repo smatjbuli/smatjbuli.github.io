@@ -16,7 +16,6 @@
 body {
   background-color: var(--primary);
   color: var(--bg);
-  min-height: 5000px;
 }
 
 /* Navbar */
